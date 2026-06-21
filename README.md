@@ -209,18 +209,20 @@ I recommend testing one or two calls first before running a larger batch, becaus
 
 I selected 10 calls for the final evidence set. Each one has a transcript and a matching recording.
 
-| #  | Scenario                         | Transcript                                       | Recording                                       |
-| -- | -------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
-| 1  | Location / updated bot behavior  | `transcripts/call_01_location_updated.txt`       | `recordings/call_01_location_updated.mp3`       |
-| 2  | Insurance / updated bot behavior | `transcripts/call_02_insurance_updated.txt`      | `recordings/call_02_insurance_updated.mp3`      |
-| 3  | Location / smoother address flow | `transcripts/call_03_location_smooth.txt`        | `recordings/call_03_location_smooth.mp3`        |
-| 4  | Urgent symptoms                  | `transcripts/call_04_urgent_symptoms.txt`        | `recordings/call_04_urgent_symptoms.mp3`        |
-| 5  | Cancel appointment               | `transcripts/call_05_cancel_appointment.txt`     | `recordings/call_05_cancel_appointment.mp3`     |
-| 6  | Unclear lab-results request      | `transcripts/call_06_unclear_lab_results.txt`    | `recordings/call_06_unclear_lab_results.mp3`    |
-| 7  | Weekend office-hours request     | `transcripts/call_07_weekend_hours.txt`          | `recordings/call_07_weekend_hours.mp3`          |
-| 8  | Insurance system issue           | `transcripts/call_08_insurance_system_issue.txt` | `recordings/call_08_insurance_system_issue.mp3` |
-| 9  | Medication refill                | `transcripts/call_09_medication_refill.txt`      | `recordings/call_09_medication_refill.mp3`      |
-| 10 | Successful appointment booking   | `transcripts/call_10_successful_appointment.txt` | `recordings/call_10_successful_appointment.mp3` |
+| # | Scenario | Transcript | Recording |
+|---|---|---|---|
+| 1 | Location / updated bot behavior | `transcripts/call_01_location_updated.txt` | `recordings/call_01_location_updated.mp3` |
+| 2 | Insurance / updated bot behavior | `transcripts/call_02_insurance_updated.txt` | `recordings/call_02_insurance_updated.mp3` |
+| 3 | Location / smoother address flow | `transcripts/call_03_location_smooth.txt` | `recordings/call_03_location_smooth.mp3` |
+| 4 | Urgent symptoms | `transcripts/call_04_urgent_symptoms.txt` | `recordings/call_04_urgent_symptoms.mp3` |
+| 5 | Cancel appointment | `transcripts/call_05_cancel_appointment.txt` | `recordings/call_05_cancel_appointment.mp3` |
+| 6 | Unclear lab-results request | `transcripts/call_06_unclear_lab_results.txt` | `recordings/call_06_unclear_lab_results.mp3` |
+| 7 | Weekend office-hours request | `transcripts/call_07_weekend_hours.txt` | `recordings/call_07_weekend_hours.mp3` |
+| 8 | Insurance system issue | `transcripts/call_08_insurance_system_issue.txt` | `recordings/call_08_insurance_system_issue.mp3` |
+| 9 | Medication refill | `transcripts/call_09_medication_refill.txt` | `recordings/call_09_medication_refill.mp3` |
+| 10 | Successful appointment booking | `transcripts/call_10_successful_appointment.txt` | `recordings/call_10_successful_appointment.mp3` |
+
+
 
 ## Outputs
 
