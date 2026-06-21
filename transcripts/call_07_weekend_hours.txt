@@ -1,0 +1,30 @@
+Call SID: CA28a746a10607ec06068bee536af483fd
+Scenario: office_hours_weekend — Weekend scheduling edge case
+Objective: Ask for a Sunday appointment and test whether the agent checks office hours.
+Patient Profile: {'name': 'Megan Torres', 'first_name': 'Megan', 'last_name': 'Torres', 'name_spelled': 'M-E-G-A-N, T-O-R-R-E-S', 'date_of_birth': 'September eighteenth, nineteen ninety-two', 'phone': 'seven six five, five five five, zero six one nine', 'phone_digits': '765-555-0619'}
+From: +17193561032
+To: +18054398008
+Expected checks:
+- Agent should not schedule outside office hours.
+- Agent should offer valid weekday alternatives if Sunday is unavailable.
+
+Transcript:
+[2026-06-19T23:00:25+00:00] PrettyGoodAI: May be recorded for quality and training purposes. (confidence=0.936216)
+[2026-06-19T23:00:31+00:00] PatientBot: Hi, I'm calling for a routine appointment and I was wondering if there's any availability on Sunday?
+[2026-06-19T23:00:45+00:00] PrettyGoodAI: Please tell me your date of birth. (confidence=0.9836587)
+[2026-06-19T23:00:45+00:00] PatientBot: September eighteenth, nineteen ninety-two
+[2026-06-19T23:00:55+00:00] PrettyGoodAI: Please tell me your full name and date of birth. (confidence=0.97676706)
+[2026-06-19T23:00:55+00:00] PatientBot: My full name is Megan Torres, and my date of birth is September eighteenth, nineteen ninety-two.
+[2026-06-19T23:01:12+00:00] PrettyGoodAI: I have your name as Megan Torres in your date of birth as September 18th 1992. Is that correct? (confidence=0.9558243)
+[2026-06-19T23:01:12+00:00] PatientBot: Yes, this is Megan Torres.
+[2026-06-19T23:01:24+00:00] PrettyGoodAI: Do you want to use a phone number to look up your record? (confidence=0.985706)
+[2026-06-19T23:01:24+00:00] PatientBot: seven six five, five five five, zero six one nine
+[2026-06-19T23:01:38+00:00] PrettyGoodAI: I have your number as 765-555-0619. (confidence=0.8199056)
+[2026-06-19T23:01:43+00:00] PatientBot: That's correct
+[2026-06-19T23:01:51+00:00] PrettyGoodAI: Connecting you to a representative, please wait. (confidence=0.98019296)
+[2026-06-19T23:01:57+00:00] PatientBot: I'd like to schedule an appointment for Sunday at 10:00 a.m.
+[2026-06-19T23:02:06+00:00] PrettyGoodAI: [No speech captured or timeout]
+[2026-06-19T23:02:06+00:00] PatientBot: Sorry, I didn't catch that.
+[2026-06-19T23:02:06+00:00] System: Call status: completed
+
+

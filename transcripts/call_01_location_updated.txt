@@ -1,0 +1,67 @@
+Pretty Good AI Challenge Call Transcript
+================================================
+Created UTC: 2026-06-21T01:34:25+00:00
+Call SID: CA36bb70c848f2e20a6764bfe1cc5b4a15
+Scenario ID: location_question
+Scenario title: Location and parking question
+Objective: Ask for clinic location, parking instructions, and arrival time.
+From: +17193561032
+To: +18054398008
+
+Patient profile
+------------------------------------------------
+name: Nina Brooks
+first_name: Nina
+last_name: Brooks
+name_spelled: N-I-N-A, B-R-O-O-K-S
+date_of_birth: April tenth, nineteen ninety-four
+phone: seven six five, five five five, zero eight two two
+phone_digits: 765-555-0822
+voice_gender: female
+
+Scenario details
+------------------------------------------------
+reason_for_call: location and arrival logistics
+questions: ['What is the clinic address?', 'Where should the patient park?', 'How early should the patient arrive?']
+success_criteria: Complete after the clinic gives the address or explains where to find it, and answers parking or arrival-time instructions, or clearly says those details are unavailable.
+completion_signals: ['address', 'parking', 'arrive', 'directions', 'location']
+patient_behavior: Do not schedule a new appointment. Ask only about logistics for an existing appointment. If the clinic cannot provide directions, ask for parking or arrival timing.
+do_not_do: ['Do not start scheduling.', 'Do not accept vague information if address or parking has not been answered.']
+known_agent_quirks: ['The clinic agent may incorrectly ask whether it is speaking with Maya, even when the scenario patient is someone else.', 'If the clinic agent asks whether it is speaking with the wrong name, politely correct it with the actual patient name.', 'The clinic agent may say the birthday does not match records but will accept it for demo purposes.', 'If the birthday is accepted for demo purposes, continue with the actual reason for the call instead of repeating DOB.', 'If the clinic agent asks the patient to wait, stay on the line, or says it is checking records, wait politely.']
+
+Expected checks
+------------------------------------------------
+- Agent should provide clear location information.
+- Agent should not accidentally start a new scheduling flow.
+
+Transcript
+------------------------------------------------
+[2026-06-21T01:34:31+00:00] PrettyGoodAI: Be recorded for quality and training purposes. (confidence=0.9597403)
+[2026-06-21T01:34:31+00:00] PatientBot: Okay.
+[2026-06-21T01:34:37+00:00] PrettyGoodAI: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with Maya (confidence=0.89122105)
+[2026-06-21T01:34:37+00:00] PatientBot: No, this is Nina Brooks.
+[2026-06-21T01:34:46+00:00] PrettyGoodAI: Please say your date of birth. (confidence=0.906347)
+[2026-06-21T01:34:46+00:00] PatientBot: April tenth, nineteen ninety-four
+[2026-06-21T01:34:59+00:00] PrettyGoodAI: Please spell your first and last name for me and confirm your date of birth. (confidence=0.9417064)
+[2026-06-21T01:34:59+00:00] PatientBot: N-I-N-A, B-R-O-O-K-S
+[2026-06-21T01:35:12+00:00] PrettyGoodAI: Please confirm your date of birth again. (confidence=0.98659664)
+[2026-06-21T01:35:12+00:00] PatientBot: Yes, that's correct.
+[2026-06-21T01:35:23+00:00] PrettyGoodAI: Do you want to use a phone number to look up your record? (confidence=0.9855896)
+[2026-06-21T01:35:23+00:00] PatientBot: seven six five, five five five, zero eight two two
+[2026-06-21T01:35:36+00:00] PrettyGoodAI: I have your number at 765-555-0822, is that correct? (confidence=0.88433474)
+[2026-06-21T01:35:36+00:00] PatientBot: Yes, that's correct.
+[2026-06-21T01:35:50+00:00] PrettyGoodAI: I have your date of birth as April 10th 1994 and your number is 765555. (confidence=0.8938138)
+[2026-06-21T01:35:50+00:00] PatientBot: April tenth, nineteen ninety-four
+[2026-06-21T01:35:54+00:00] PrettyGoodAI: 0822. (confidence=0.28519744)
+[2026-06-21T01:36:05+00:00] PatientBot: What's the clinic address?
+[2026-06-21T01:36:13+00:00] PrettyGoodAI: I need your date of birth. First, please confirm, your full date of birth. (confidence=0.97449154)
+[2026-06-21T01:36:13+00:00] PatientBot: Yes, that's correct.
+[2026-06-21T01:36:27+00:00] PrettyGoodAI: Connecting you to a representative please. Wait hello you've reached the pretty good AI test line. (confidence=0.9211854)
+[2026-06-21T01:36:33+00:00] PatientBot: Okay, I'll stay on the line.
+[2026-06-21T01:36:33+00:00] System: Call status: completed
+
+Recording
+------------------------------------------------
+
+Recording
+------------------------------------------------

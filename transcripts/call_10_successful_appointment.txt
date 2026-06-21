@@ -1,0 +1,42 @@
+Call SID: CAd51b3e742751b5db464f1080a5baca68
+Scenario: appointment_simple — Simple appointment scheduling
+Objective: Schedule a normal primary-care routine annual checkup for next week.
+Patient Profile: {'name': 'Maya Patel', 'date_of_birth': 'January fourteenth, nineteen ninety-seven', 'phone': 'seven six five, five five five, zero one nine eight'}
+From: +17193561032
+To: +18054398008
+Expected checks:
+- Agent should verify identity before scheduling.
+- Agent should offer a specific date and time.
+- Agent should confirm the final appointment details.
+
+Transcript:
+[2026-06-19T21:53:20+00:00] System: Call status: in-progress
+[2026-06-19T21:53:26+00:00] PrettyGoodAI: And training purposes. (confidence=0.91834927)
+[2026-06-19T21:53:35+00:00] PatientBot: I'd like to schedule a routine annual checkup for next week.
+[2026-06-19T21:53:44+00:00] PrettyGoodAI: Please tell me your date of birth. (confidence=0.9584493)
+[2026-06-19T21:53:47+00:00] PatientBot: January fourteenth, nineteen ninety-seven
+[2026-06-19T21:54:01+00:00] PrettyGoodAI: The birthday does not match our records, but for demo purposes, I will accept it. Let me check scheduling for you. (confidence=0.9544355)
+[2026-06-19T21:54:05+00:00] PatientBot: I'd like to schedule it for either Tuesday or Wednesday morning next week.
+[2026-06-19T21:54:21+00:00] PrettyGoodAI: This is for a routine office. Visit would you like to book the same type of appointment today? (confidence=0.96528435)
+[2026-06-19T21:54:26+00:00] PatientBot: Yes, I'd like to book a routine office visit for next week.
+[2026-06-19T21:54:31+00:00] PrettyGoodAI: Aaski or Dr. Kelly Noble. (confidence=0.779926)
+[2026-06-19T21:54:36+00:00] PatientBot: I'd like to schedule with Dr. Kelly Noble.
+[2026-06-19T21:54:49+00:00] PrettyGoodAI: Sure on Wednesday morning with Dr. Kelly Noble, I have 10 a.m. 10:30 a.m. and 11:00 a.m. (confidence=0.90543056)
+[2026-06-19T21:54:54+00:00] PatientBot: What about Tuesday morning?
+[2026-06-19T21:55:06+00:00] PrettyGoodAI: Tuesday morning with Dr. Kelly Noble has openings at 10:00 a.m. 10:30 a.m. and 11:00 a.m. (confidence=0.96079767)
+[2026-06-19T21:55:10+00:00] PatientBot: What about Tuesday morning?
+[2026-06-19T21:55:20+00:00] PrettyGoodAI: Tuesday morning is open with Dr. Kelly Noble at 10 a.m. 10:30 a.m. at 11:00 a.m. (confidence=0.90501136)
+[2026-06-19T21:55:25+00:00] PatientBot: What about Tuesday morning?
+[2026-06-19T21:55:38+00:00] PrettyGoodAI: Tuesday morning is available with Dr. Kelly Noble. I have 10:00 a.m. 10:30 a.m. and 11:00 a.m. Which 1 would you like? (confidence=0.96802163)
+[2026-06-19T21:55:43+00:00] PatientBot: I'll take the 10:00 a.m. slot
+[2026-06-19T21:55:56+00:00] PrettyGoodAI: [No speech captured or timeout]
+[2026-06-19T21:56:01+00:00] PatientBot: I'll take the 10:00 a.m. slot
+[2026-06-19T21:56:09+00:00] PrettyGoodAI: Issue photo ID and insurance card. If you have them, bring a list of current medications in any Imaging discs too. (confidence=0.9604347)
+[2026-06-19T21:56:13+00:00] PatientBot: I have my photo ID right here
+[2026-06-19T21:56:26+00:00] PrettyGoodAI: You are all set. (confidence=0.9660835)
+[2026-06-19T21:56:31+00:00] PatientBot: I have my photo ID right here
+[2026-06-19T21:56:41+00:00] PrettyGoodAI: Great, you're all set. (confidence=0.8617456)
+[2026-06-19T21:56:41+00:00] PatientBot: Thank you, that's all I needed. Goodbye.
+[2026-06-19T21:56:43+00:00] System: Call status: completed
+
+

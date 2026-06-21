@@ -1,0 +1,43 @@
+Call SID: CA629f93d5cdbdcbb6455ca6294565e701
+Scenario: cancel_appointment — Cancel appointment
+Objective: Cancel an existing appointment and ask whether there is a cancellation fee.
+Patient Profile: {'name': 'Alicia Reed', 'first_name': 'Alicia', 'last_name': 'Reed', 'name_spelled': 'A-L-I-C-I-A, R-E-E-D', 'date_of_birth': 'November twenty-second, nineteen seventy-eight', 'phone': 'seven six five, five five five, zero three zero seven', 'phone_digits': '765-555-0307'}
+From: +17193561032
+To: +18054398008
+Expected checks:
+- Agent should verify identity before canceling.
+- Agent should not push rescheduling after the patient declines.
+- Agent should confirm cancellation status or escalation.
+
+Transcript:
+[2026-06-19T23:16:37+00:00] PrettyGoodAI: May be recorded for quality and training purposes. (confidence=0.9365445)
+[2026-06-19T23:16:41+00:00] PatientBot: I'd like to cancel my appointment
+[2026-06-19T23:16:48+00:00] PrettyGoodAI: Please provide your date of birth. (confidence=0.9602973)
+[2026-06-19T23:16:48+00:00] PatientBot: November twenty-second, nineteen seventy-eight
+[2026-06-19T23:16:59+00:00] PrettyGoodAI: Let me check your upcoming appointments. (confidence=0.98107475)
+[2026-06-19T23:17:03+00:00] PatientBot: Okay, thank you. I'll wait.
+[2026-06-19T23:17:09+00:00] PrettyGoodAI: Which 1? (confidence=0.74415636)
+[2026-06-19T23:17:13+00:00] PatientBot: Number one
+[2026-06-19T23:17:20+00:00] PrettyGoodAI: Tuesday, June 1st for the cancellation. (confidence=0.795042)
+[2026-06-19T23:17:25+00:00] PatientBot: That works
+[2026-06-19T23:17:39+00:00] PrettyGoodAI: 1 moment, I am canceling, that appointment. Now your appointment with Kelly Noble. MD on Tuesday, June 23rd has been canceled. What else can I help with? (confidence=0.9307285)
+[2026-06-19T23:17:44+00:00] PatientBot: Is there a cancellation fee?
+[2026-06-19T23:17:58+00:00] PrettyGoodAI: I'm not able to confirm billing or fee details here. I can document your question and have our Clinic support team follow up as soon as possible. (confidence=0.9745145)
+[2026-06-19T23:18:04+00:00] PatientBot: Can your support team follow up with me about the cancellation fee?
+[2026-06-19T23:18:08+00:00] PrettyGoodAI: Let me process that for you. (confidence=0.9738882)
+[2026-06-19T23:18:13+00:00] PatientBot: Can we continue scheduling the appointment?
+[2026-06-19T23:18:18+00:00] PrettyGoodAI: Follow up as soon as. (confidence=0.9193017)
+[2026-06-19T23:18:24+00:00] PatientBot: Okay, I'll wait.
+[2026-06-19T23:18:29+00:00] PrettyGoodAI: I've got it noted. (confidence=0.91237295)
+[2026-06-19T23:18:34+00:00] PatientBot: I'll wait
+[2026-06-19T23:18:44+00:00] PrettyGoodAI: Understood. They'll reach out as soon as possible. (confidence=0.93778855)
+[2026-06-19T23:18:49+00:00] PatientBot: That works
+[2026-06-19T23:18:58+00:00] PrettyGoodAI: [No speech captured or timeout]
+[2026-06-19T23:18:58+00:00] PatientBot: Sorry, I didn't catch that.
+[2026-06-19T23:19:07+00:00] PrettyGoodAI: No problem. How can I help? (confidence=0.81741184)
+[2026-06-19T23:19:12+00:00] PatientBot: I'd like to cancel my appointment
+[2026-06-19T23:19:19+00:00] PrettyGoodAI: I can help with that. (confidence=0.98201084)
+[2026-06-19T23:19:19+00:00] PatientBot: Thank you, that's all I needed. Goodbye.
+[2026-06-19T23:19:22+00:00] System: Call status: completed
+
+

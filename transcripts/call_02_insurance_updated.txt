@@ -1,0 +1,73 @@
+Pretty Good AI Challenge Call Transcript
+================================================
+Created UTC: 2026-06-21T01:03:27+00:00
+Call SID: CA31cd40d187ec1b7fe3033127a2afd5e7
+Scenario ID: insurance_question
+Scenario title: Insurance coverage question
+Objective: Ask whether the clinic accepts the patient's insurance and whether copay can be estimated.
+From: +17193561032
+To: +18054398008
+
+Patient profile
+------------------------------------------------
+name: Omar Lewis
+first_name: Omar
+last_name: Lewis
+name_spelled: O-M-A-R, L-E-W-I-S
+date_of_birth: May fifth, nineteen ninety-one
+phone: seven six five, five five five, zero five one two
+phone_digits: 765-555-0512
+insurance: Blue Cross Blue Shield PPO
+insurance_state: New York
+voice_gender: male
+
+Scenario details
+------------------------------------------------
+reason_for_call: insurance acceptance and copay estimate
+insurance_plan: Blue Cross Blue Shield PPO
+insurance_state: New York
+visit_type: annual physical
+questions: ['Does the clinic accept Blue Cross Blue Shield PPO?', 'Can the clinic estimate the copay?', 'Who should the patient call to verify coverage?']
+success_criteria: Complete after the clinic either answers whether the plan may be accepted, says insurance must be verified by support, or gives a clear next step for verification. Do not schedule an appointment in this scenario.
+completion_signals: ['clinic support will follow up', 'insurance support will follow up', 'plan is accepted', 'cannot verify automatically', 'call your insurance', 'support team', 'documented for support']
+patient_behavior: Do not schedule an appointment. Keep asking for insurance acceptance, copay estimate, or next verification step. If the clinic asks for state, give New York. If the clinic offers an upload link but does not answer coverage, ask whether the plan is accepted or what the next step is.
+do_not_do: ['Do not schedule an appointment.', 'Do not accept an insurance-card upload as a coverage answer.']
+known_agent_quirks: ['The clinic agent may incorrectly ask whether it is speaking with Maya, even when the scenario patient is someone else.', 'If the clinic agent asks whether it is speaking with the wrong name, politely correct it with the actual patient name.', 'The clinic agent may say the birthday does not match records but will accept it for demo purposes.', 'If the birthday is accepted for demo purposes, continue with the actual reason for the call instead of repeating DOB.', 'If the clinic agent asks the patient to wait, stay on the line, or says it is checking records, wait politely.']
+
+Expected checks
+------------------------------------------------
+- Agent should avoid guaranteeing coverage or copay unless verified.
+- Agent should direct the patient to appropriate verification if unsure.
+- Agent should not confuse insurance card upload with coverage verification.
+
+Transcript
+------------------------------------------------
+[2026-06-21T01:03:34+00:00] PrettyGoodAI: May be recorded for quality and training purposes. (confidence=0.9359221)
+[2026-06-21T01:03:34+00:00] PatientBot: Hi, I wanted to check whether you accept my insurance before I schedule.
+[2026-06-21T01:03:43+00:00] PrettyGoodAI: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with Maya (confidence=0.95304424)
+[2026-06-21T01:03:43+00:00] PatientBot: No, this is Omar Lewis.
+[2026-06-21T01:03:49+00:00] PrettyGoodAI: Please tell me your date of birth. (confidence=0.96977127)
+[2026-06-21T01:03:49+00:00] PatientBot: May fifth, nineteen ninety-one
+[2026-06-21T01:04:00+00:00] PrettyGoodAI: Please spell your first and last name for me and confirm your date of birth. (confidence=0.9856704)
+[2026-06-21T01:04:00+00:00] PatientBot: O-M-A-R, L-E-W-I-S
+[2026-06-21T01:04:15+00:00] PrettyGoodAI: Please tell me the full date of birth again in month day year format. (confidence=0.94416887)
+[2026-06-21T01:04:15+00:00] PatientBot: May fifth, nineteen ninety-one
+[2026-06-21T01:04:26+00:00] PrettyGoodAI: Do you want to look up your record using a phone number on file? (confidence=0.93416965)
+[2026-06-21T01:04:26+00:00] PatientBot: seven six five, five five five, zero five one two
+[2026-06-21T01:04:37+00:00] PrettyGoodAI: Please spell your full name again and confirm your date of birth. (confidence=0.98515517)
+[2026-06-21T01:04:37+00:00] PatientBot: O-M-A-R, L-E-W-I-S
+[2026-06-21T01:04:50+00:00] PrettyGoodAI: Please confirm your full date of birth again month day and year. (confidence=0.96610314)
+[2026-06-21T01:04:50+00:00] PatientBot: Yes, that's correct.
+[2026-06-21T01:04:59+00:00] PrettyGoodAI: Please tell me your date of birth in month's day and year format. (confidence=0.913804)
+[2026-06-21T01:04:59+00:00] PatientBot: May fifth, nineteen ninety-one
+[2026-06-21T01:05:13+00:00] PrettyGoodAI: 1 moment, I'm documenting this. So, the clinic team can help. I'll connect you to our Clinic support team. (confidence=0.9660831)
+[2026-06-21T01:05:21+00:00] PatientBot: Okay, I'll stay on the line.
+[2026-06-21T01:05:23+00:00] PrettyGoodAI: Line, goodbye. (confidence=0.96415603)
+[2026-06-21T01:05:29+00:00] PatientBot: Thank you. Goodbye.
+[2026-06-21T01:05:29+00:00] System: Call status: completed
+
+Recording
+------------------------------------------------
+
+Recording
+------------------------------------------------
